@@ -18,6 +18,7 @@ public class Factorial {
 		readNum(s);
 
 		System.out.println("You have quit the program.");
+		
 		try {
 			TimeUnit.SECONDS.sleep(5);
 		} catch (InterruptedException e) {
@@ -36,8 +37,7 @@ public class Factorial {
 					System.out.print("Re-type n: ");
 					readNum(s);
 				}else factorial(n, s);
-		}
-		
+		}	
 	}
 
 	private static void factorial(int n, Scanner s) {
@@ -48,6 +48,7 @@ public class Factorial {
 		System.out.println();
 		System.out.println("The result:");
 		System.out.println(n + "! = " + nfact);
+		
 		System.out.println();
 		System.out.println("Do you want to calculate another?");
 		System.out.println("Re-type n: ");
